@@ -1,0 +1,96 @@
+// Views Slideshow Pager (Using Views Global Counter)
+.view-homepage-slideshow{
+  position: relative;
+}
+
+.views-slideshow-controls-bottom #widget_pager_bottom_homepage_slideshow-block{
+  width: 270px;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  .views-slideshow-pager-field-item{
+    margin: 0 3px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    .views-field-counter{
+      width: 11px;
+      height: 11px;
+      display: block;
+      background: $blue;
+      //background: rgba(0,0,0,0.5);
+      cursor: pointer;
+      text-indent: -9999px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -o-border-radius: 20px;
+      border-radius: 20px;
+      box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+      &:hover{
+        background: #333;
+        background: rgba(0,0,0,0.7);
+      }
+    }
+     &.active .views-field-counter{
+      background: #000;
+      background: rgba(0,0,0,0.9);
+      cursor: default;
+    }
+  }
+}
+
+// View Slideshow Control Arrows
+
+//.views-slideshow-controls-top
+/*
+.views-slideshow-controls-bottom
+{
+    .views-slideshow-controls-text-pause{
+      display: none;
+    }
+    .views-slideshow-controls-text-previous{
+      position: absolute;
+      top: 43%;
+      left: -30px;
+      @include ir;
+      background: url(images/pager-arrows.png) 0 0;
+      width: 15px;
+      height: 30px;
+    }
+    .views-slideshow-controls-text-next {
+      position: absolute;
+      top: 43%;
+      right: -30px;
+       @include ir;
+      background: url(images/pager-arrows.png) 100% 0;
+      width: 15px;
+      height: 30px;
+    }
+  }
+*/
+
+/*
+.views_slideshow_cycle_main {
+  width: 100%;
+  float: left;
+}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
+  width: 100% !important;
+  height: auto;
+}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
+  width: 100% !important;
+  height: auto;
+}
+.views_slideshow_cycle_main .field-content {
+  max-width: 100%;
+  width: 100%;
+}
+.views_slideshow_cycle_main .field-content img {
+  max-width: 100%;
+  width: 100%;
+  height: auto !important;
+  margin: 0;
+  padding: 0;
+}
+*/

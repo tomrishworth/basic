@@ -1,0 +1,44 @@
+// Basics
+
+$bodycolor: rgb(255,255,255);
+$textcolor: rgb(71,63,63);
+
+$gutterwidth: 24px;
+$baselineheight: 1.5em;
+
+// Typography
+$basefontfamily: Palatino, "Times New Roman", Times, serif;
+$basefontsize: 16;
+$baseheadingfont: inherit;
+$baseheadingfontweight: bold;
+$baseheadingfontcolor: inherit;
+$altfontfamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$altlineheight: 1.35em;
+$codefont: Monaco, Courier New, monospace;
+
+// Colours
+$primarycolor: #E99023;
+$secondarycolor: rgb(164,50,21);
+$tertiarycolor: rgb(41,47,54);
+
+
+$neutralcolor: rgb(71,63,63);
+$midneutralcolor: darken($neutralcolor,25%);
+$darkneutralcolor: darken($neutralcolor,50%);
+$lightneutralcolor: lighten($neutralcolor,25%);
+$lighterneutralcolor: lighten($neutralcolor,50%);
+$lightestneutralcolor: lighten($neutralcolor,70%);
+
+$black: rgb(0,0,0);
+$white: rgb(255,255,255);
+
+$linkcolor: $primarycolor;
+$linkcolorhover: darken($linkcolor, 10);
+$linkcolorvisited: darken($linkcolorhover, 10);
+$linkcolorfocus: darken($linkcolorvisited, 10);
+$linkcoloractive: darken($linkcolor, 30);
+
+$bordercolor: $lighterneutralcolor;
+$borderstyle: solid;
+$borderwidth: 1px;
+$borderradius: 4px;

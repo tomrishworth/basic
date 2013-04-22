@@ -1,0 +1,125 @@
+// Generic Styles
+@import "compass";
+
+*{
+  @include box-sizing(border-box);
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background: $bodycolor;
+  font-size: 100%;
+  font-family: $basefontfamily;
+  @include font-size($basefontsize);
+  line-height: $baselineheight;
+  color: $textcolor;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix {
+  *zoom : 1;
+  &:before, &:after {
+    display: table;
+    content: ""; 
+  }
+  &:after {
+    clear: both; 
+  }
+}
+
+#skip a {
+  &:link, &:hover, &:visited {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  &:active, &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+}
+
+a {
+  text-decoration : none;
+  color : $linkcolor;
+  &:visited {
+    color : $linkcolorvisited; 
+  }
+  &:hover, &.active {
+    color : $linkcolorhover;
+  }
+  &:focus {
+    outline : thin dotted;
+    color : $linkcolorfocus; 
+  }
+  &:hover, &:active {
+    outline : 0;
+  }
+}
+
+li a.active{
+  color: $linkcoloractive;
+}
+
+// Corrects block display not defined in IE6/7/8/9 & FF3
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+// Corrects inline-block display not defined in IE6/7/8/9 & FF3
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+
+// Header
+
+#header{
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+
+// Nav
+
+#primary{
+  @include zero;
+}
+
+#block-system-main-menu{
+  padding-top:10px;
+  ul{
+    @include zero;
+  }
+  li{
+    display: inline;
+    padding: 0 20px;
+  }
+}

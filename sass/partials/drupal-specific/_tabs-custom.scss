@@ -1,0 +1,48 @@
+#content-header{
+  position: relative;
+}
+
+ul.tabs{
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  li{
+    float: left;
+    margin-bottom: -1px;
+    a{
+      margin-right: 2px;
+      padding: 8px 12px;
+      @include border-radius (4px);
+      background: none;
+      display: block;
+      border: none;
+      font-size: 12px;
+      color: $neutralcolor;
+      &.active{
+        background: $lighterneutralcolor;
+        color: $darkneutralcolor;
+        border: none;
+      }
+      &:hover{
+        background: $darkneutralcolor;
+        color: #fff;
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+ul.tabs:before,
+ul.tabs:after{
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+ul.tabs:after{
+  clear: both;
+}
+
+

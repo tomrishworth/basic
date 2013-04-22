@@ -1,0 +1,26 @@
+// Style unique to this theme
+
+#header-wrapper{
+  background: $primarycolor;
+}
+
+#nav-wrapper{
+  background: $secondarycolor;
+}
+
+// Nav aligned right of logo
+
+#logo{
+  @include span-columns (3 of 12);
+  @include media($mobile){
+    @include span-columns(4);
+  }
+}
+
+#header-region{
+  @include span-columns (9 of 12);
+  @include omega;
+  @include media($mobile){
+    @include span-columns(4);
+  }
+}

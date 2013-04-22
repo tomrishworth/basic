@@ -1,0 +1,81 @@
+// Superfish
+
+#superfish-1{
+  //float: right;
+  //padding-top: 8px;
+  li.menuparent li{
+    margin: 0;
+  }
+  li{
+    //margin: 0 20px;
+    margin: 0;
+    &.sfHover{
+      background: $link-color;
+    }
+    a{
+      //padding: 15px 20px;
+      color: #000;
+      .sf-sub-indicator{
+        background-image: url('../images/arrows.png');
+        background-position: 0 0;
+        top: 28px;
+        right: 8px;
+        width: 6px;
+        height: 9px
+        }
+      &:hover{
+        //background: #ECEBE7;
+        //background: $link-accent;
+        .sf-sub-indicator{
+          background-position: 100% 0;
+        }
+      }
+    }
+    ul{
+      background: $link-color;
+      padding: 15px;
+      width: 180px;
+      top: 67px;
+      /*
+      left: -30%;
+      text-align: center;
+      -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.5);
+      -moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.5);
+      box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.5);
+      @include border-radius (5px);
+      */
+      a.sf-depth-2{
+        //font-weight: bold;
+        //border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        color: #fff;
+        &:hover{
+          color: #333;
+        }
+      }
+      a.sf-depth-3{
+        font-weight: normal;
+        border-bottom: none;
+        padding-left: 0;
+        padding-bottom: 5px;
+      }
+      li.sf-depth-1{
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .sfHover{
+    a{
+      .sf-sub-indicator{
+        background-position: 100% 0;
+      }
+    }
+    .menuparent{
+      color: #000;
+    }
+  }
+}
+
+
+

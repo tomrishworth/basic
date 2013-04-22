@@ -1,0 +1,41 @@
+ul.tabs{
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  width: 100%;
+  li{
+    float: left;
+    margin-bottom: -1px;
+    &.active a{
+      border-color: #ddd #ddd transparent;
+    }
+    a{
+      margin-right: 2px;
+      padding: 8px 12px;
+      line-height: 20px;
+      border: 1px solid transparent;
+      @include border-radius (4px 4px 0 0);
+      background: none;
+      display: block;
+      &:hover{
+        background: #eee;
+        color: #555555;
+        border-color: transparent;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+}
+
+ul.tabs:before,
+ul.tabs:after{
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+ul.tabs:after{
+  clear: both;
+}
+
+

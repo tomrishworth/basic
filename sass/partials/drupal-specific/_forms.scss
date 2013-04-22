@@ -1,0 +1,82 @@
+// Fieldset styles
+
+
+fieldset{
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset-wrapper{
+  margin-top: 20px;
+  border-top: 1px dotted #ccc;
+}
+
+legend{
+  float: left;
+}
+
+legend span{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Fix for Firefox
+@-moz-document url-prefix() {
+  .a legend span {
+    top: -30px !important;
+    left: 0 !important;
+  }
+}
+
+
+// Form Input Styling
+
+input.form-text, textarea{
+  font-size: 15px;
+  padding: 8px;
+  @include border-radius (5px);
+  border: 1px solid #ccc;
+}
+
+
+#edit-actions .form-submit{
+  // Bourbon Button
+  @include button (simple, $linkcolor);
+  padding: 13px 20px 11px 19px;
+  font-size: 1.3em;
+}
+
+.form-item label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.webform-component{
+  margin-bottom: 10px;
+}
+
+.form-type-radio label{
+  font-weight: 400;
+}
+
+.marker, .form-required {
+    color: #000000;
+}
+
+/* Focus styles for accessibility and usabiltiy. */
+.form-text:focus,
+.form-checkbox:focus,
+.form-radio:focus,
+.form-select:focus {
+  border: 1px solid #d7f2fb;
+  background: #f0f8fa;
+}
+textarea:focus {
+  border: 1px solid #d7f2fb;
+  background: #fff;
+}
+
+
